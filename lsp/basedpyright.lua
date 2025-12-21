@@ -36,10 +36,16 @@ return {
   },
   settings = {
     basedpyright = {
+
+      -- -- based on the recommendations "if you want to exclusively use ruff for linting formatting and import stuff...
+      --  https://docs.astral.sh/ruff/editors/setup/#neovim
+      -- "
+      disableOrganizeImports = true,
       analysis = {
-        autoSearchPaths = true,
-        useLibraryCodeForTypes = true,
-        diagnosticMode = 'openFilesOnly',
+        -- autoSearchPaths = true,
+        -- useLibraryCodeForTypes = true,
+        -- diagnosticMode = 'openFilesOnly',
+        ignore = { "*" },
       },
     },
   },
