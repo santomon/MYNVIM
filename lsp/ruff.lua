@@ -32,20 +32,5 @@ return {
   filetypes = { 'python' },
   root_markers = { 'pyproject.toml', 'ruff.toml', '.ruff.toml', '.git' },
   settings = {
-      args = {
-        -- Example: exclude type-checking related rules that ty handles
-        "--ignore", "PYI,TCH,ANN,F821,F401",
-      },
   },
-  on_attach = function(client, bufnr)
-    -- Disable Ruff's hover (ty will handle this better)
-    client.server_capabilities.hoverProvider = false
-    
-    -- Disable Ruff's completion, go-to-def, etc. (ty handles these)
-    client.server_capabilities.completionProvider = false
-    client.server_capabilities.definitionProvider = false
-    client.server_capabilities.referencesProvider = false
-    client.server_capabilities.renameProvider = false
-  end,
-
 }
