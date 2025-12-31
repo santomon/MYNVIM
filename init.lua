@@ -33,3 +33,4 @@ vim.lsp.enable("tilt_ls")
 
 
 vim.lsp.enable("ruff")
+vim.lsp.enable("taplo")
