@@ -19,7 +19,8 @@ require'nvim-treesitter.configs'.setup {
   "git_rebase",
   "gitattributes",
   "starlark",
-  "csv"
+  "csv",
+  "toml"
   },
 
 
