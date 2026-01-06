@@ -1,5 +1,6 @@
 require("config.lazy")
 require("santomon")
+vim.cmd [[source ~/.config/nvim/vim/config/set.vim]]
 
 vim.filetype.add({
     filename = {
@@ -7,7 +8,7 @@ vim.filetype.add({
     },
 })
 
-vim.cmd [[set completeopt+=menuone,noselect,popup,]]
+vim.cmd.source(vim.fn.stdpath('config') .. '/vim/config/set.vim')
 
 
 vim.lsp.enable("basedpyright")
