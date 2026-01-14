@@ -36,3 +36,7 @@ vim.lsp.enable("tilt_ls")
 vim.lsp.enable("ruff")
 vim.lsp.enable("taplo")
 vim.lsp.enable("texlab")
+
+
+-- other shit
+-- this one here is profile.nvim by @stevearc

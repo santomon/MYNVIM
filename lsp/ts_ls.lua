@@ -45,8 +45,13 @@
 
 ---@type vim.lsp.Config
 return {
-    init_options = { hostInfo = 'neovim' },
-    cmd = { 'typescript-language-server', '--stdio' },
+    init_options = {
+        hostInfo = 'neovim',
+        preferences = {
+            includeCompletionsForModuleExports = true
+        }
+    },
+    -- cmd = { 'typescript-language-server', '--stdio' },
     filetypes = {
         'javascript',
         'javascriptreact',
